@@ -1,0 +1,77 @@
+{{> navbar path=path config=config configVisible=true}}
+
+<div class="containner">
+	<main class="container my-4">
+		<div class="row justify-content-center">
+			<div class="col col-lg-10 col-xl-8 col-xxl-8">
+				{{#each errors as |error|}}
+					<div class="alert alert-danger" role="alert">
+						{{error}}
+					</div>
+				{{/each}}
+				{{#each successes as |success|}}
+					<div class="alert alert-success" role="alert">
+						{{success}}
+					</div>
+				{{/each}}
+
+				<div class="input-group containner-search">
+					<form class="form-outline" onsubmit="return false;">
+						<input style="width: 42vw;" onchange="sendData(this)" id="search-input" name="searchInput" type="search" id="form1" class="form-control input-search" placeholder="Pesquisar" />
+						<button onclick="sendData(this)" id="search-button" type="button" class="btn btn-primary btn-search">
+							<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search" viewBox="0 0 16 16">
+  								<path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+							</svg>
+						</button>
+					</form>
+				</div>
+
+				 <ul class="list-group" id="lista">
+				{{#each files}}
+					{{!-- {{log name}} --}}
+					 {{!-- {{#when name 'eq'}}  --}}
+						 <li class="list-group-item">
+							<label for="check{{@index}}" class="stretched-invisible-label">
+								<div class="form-check">
+									<input type="checkbox" class="form-check-input multi-select" data-select="{{name}}" data-select-size="{{size}}" data-select-type="{{#if isdirectory}}directory{{else}}file{{/if}}" id="check{{@index}}">
+									<span class="form-check-label d-flex align-items-start justify-content-between">
+										{{#if isdirectory}}
+											<a href="./{{name}}/" class="name">{{name}}/</a>
+										{{else}}
+										{{#if error}}
+											<a href="./{{name}}/" class="name" title="{{error}}">{{name}}/</a>
+											<span class="badge rounded-pill bg-danger badge-alignment">err</span>
+										{{else}}
+											<a href="./{{name}}" class="name">{{name}}</a>
+											<span class="badge rounded-pill bg-secondary badge-alignment">{{filesize size}}</span>
+										{{/if}}
+										{{/if}}
+									</span>
+									{{#if issmallimage}}
+									<img src="./{{name}}" class="mt-2" style="max-height: 6em; max-width: 100%;">
+									{{/if}}
+								</div>
+							</label>
+						</li> 
+					 {{!-- {{/when}}  --}}
+				 {{else}}
+					<li class="list-group-item">
+						No files
+					</li>
+				{{/each}}
+				</ul> 
+			</div>
+		</div>
+	</main>
+</div>
+
+{{> toolbar shellable=shellable cmdable=cmdable}}
+
+{{> dialogue-upload}}
+{{> dialogue-mkdir}}
+{{> dialogue-cmd}}
+
+{{> dialogue-download}}
+{{> dialogue-rename}}
+{{> dialogue-delete}}
+{{> dialogue-config}}

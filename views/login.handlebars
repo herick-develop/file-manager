@@ -1,0 +1,56 @@
+{{> navbar isloggingin=true config=false configVisible=false}}
+
+<div style="padding-top: 56px; padding-bottom: 56px;">
+<main class="container my-4">
+	<div class="login mx-auto">
+		{{#each errors as |error|}}
+			<div class="alert alert-danger" role="alert">
+				{{error}}
+			</div>
+		{{/each}}
+		{{#each successes as |success|}}
+			<div class="alert alert-success" role="alert">
+				{{success}}
+			</div>
+		{{/each}}
+		<form class="py-4" action="/@login" method="post">
+			<div class="form-group">
+
+				<div class="input-group input-group-lg input-group-digits input-login">
+					<h4 class="text-login">E-mail</h4>
+					<input type="email" name="email" class="form-control" placeholder="examplo@gmail.com"/>
+				</div>
+
+				<div class="input-group input-group-lg input-group-digits input-login">
+					<h4 class="text-login">Senha</h4>
+					<input type="text" name="senha" class="form-control" placeholder="&bull;&bull;&bull;" />
+				</div>
+
+				<button onclick="send()" type="submit" name="token" id="" class="btn btn-primary btn-login">
+                	Entrar
+            	</button>
+
+			</div>
+		</form>
+		{{!-- <form class="py-4" action="/@login" method="post">
+			<h4>E-mail</h4>
+			<div class="form-group">
+				<div class="input-group input-group-lg input-group-digits">
+					<input type="text" class="form-control" />
+				</div>
+			</div>
+
+			<h4>Senha</h4>
+			<div class="form-group">
+				<div class="input-group input-group-lg input-group-digits">
+					<input type="password" class="form-control" />
+				</div>
+			</div>
+			<button type="submit"  name="token" id="login-token-value" class="btn btn-primary">
+                Entrar
+            </button>
+		</form> --}}
+	</div>
+</main>
+</div>
+{{> dialogue-config users=users}}

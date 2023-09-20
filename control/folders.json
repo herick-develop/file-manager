@@ -1,0 +1,142 @@
+[
+    {
+    "name": "Nas",
+    "path": "/home/dnas",
+    "view": [
+        "ti@umuprev.com.br",
+        "herickumuprev@gmail.com"
+    ],
+    "rename": [
+        "ti@umuprev.com.br",
+        "herickumuprev@gmail.com"
+    ],
+    "create_folder": [
+        "ti@umuprev.com.br",
+        "herickumuprev@gmail.com"
+    ],
+    "upload": [
+        "ti@umuprev.com.br",
+        "herickumuprev@gmail.com"
+    ],
+    "download": [
+        "ti@umuprev.com.br",
+        "herickumuprev@gmail.com"
+    ],
+    "delete": [
+        "ti@umuprev.com.br",
+        "herickumuprev@gmail.com"
+    ]
+    },
+    {
+        "name": "Drive TI",
+        "path": "/media/dnas/",
+        "view": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "rename": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "create_folder": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "upload": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "download": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "delete": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ]
+    },
+    {
+        "name": "HD 01",
+        "path": "/media/dnas/HD01/",
+        "view": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "rename": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "create_folder": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "upload": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "download": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "delete": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ]
+    },
+    {
+        "name": "HD 02",
+        "path": "/media/dnas/HD02/",
+        "view": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "rename": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "create_folder": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "upload": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "download": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "delete": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ]
+    },
+    {
+        "name": "HD 03",
+        "path": "/media/dnas/HD03/",
+        "view": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "rename": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "create_folder": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "upload": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "download": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ],
+        "delete": [
+            "ti@umuprev.com.br",
+            "herickumuprev@gmail.com"
+        ]
+    }
+]

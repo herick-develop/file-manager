@@ -1,0 +1,40 @@
+{{> navbar isloggingin=true config=config configVisible=true}}
+
+<div class="containner">
+	<main class="container my-4">
+		<div class="row justify-content-center">
+			<div class="col col-lg-10 col-xl-8 col-xxl-8">
+				{{#each errors as |error|}}
+					
+				{{/each}}
+				{{#each successes as |success|}}
+                
+					<div class="alert alert-success" role="alert">
+						{{success}}
+					</div>
+				{{/each}}
+
+                <form action="@openFolder" method="post">
+                    
+				<ul class="list-group list-folders">
+
+
+                    {{#each folders}}
+
+						{{#loud view this}}
+                    
+                    	{{/loud}}			
+                    
+                    {{/each}}
+
+				</ul>
+                </form>
+			</div>
+		</div>
+	</main>
+</div>
+
+			{{ log users }}
+
+{{> dialogue-newPath}}
+{{> dialogue-config users=users}}
