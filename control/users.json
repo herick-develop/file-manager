@@ -1,26 +1,10 @@
 [
   {
     "nome": "TI",
-    "email": "ti@umuprev.com.br",
+    "email": "email@example.com",
     "senha": "ti",
     "ativo": true,
     "id": 6.1444700201940485e+37,
-    "delete": false
-  },
-  {
-    "nome": "Herick",
-    "email": "herickumuprev@gmail.com",
-    "senha": "herick",
-    "ativo": true,
-    "id": 4.434335197287782e+53,
-    "delete": false
-  },
-  {
-    "nome": "yohann",
-    "email": "yohannalexandre001@gmail.com",
-    "senha": "ADMIN2123",
-    "ativo": true,
-    "id": 1.2966909137536302e+38,
     "delete": false
   }
 ]
