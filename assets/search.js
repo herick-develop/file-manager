@@ -62,7 +62,7 @@ async function sendData(e) {
         nameLink.innerHTML = parts.join('<span class="blue-text">' + e.value.trim() + '</span>');
 
         // Defina a URL completa como o href da tag <a>.
-        nameLink.href = `http://nas.umuprevtech.com.br/${element.name}`;
+        nameLink.href = `http://localhost:3030/${element.name}`;
 
         nameLink.addEventListener('click', (event) => {
           event.preventDefault();
@@ -80,7 +80,7 @@ async function sendData(e) {
           nameLink.innerHTML = parts.join('<span class="blue-text">' + e.value.trim() + '</span>');
 
           // Defina a URL completa como o href da tag <a>.
-          nameLink.href = `http://nas.umuprevtech.com.br/${element.name}`;
+          nameLink.href = `http://localhost:3030/${element.name}`;
 
           nameLink.addEventListener('click', (event) => {
             event.preventDefault();
@@ -101,7 +101,7 @@ async function sendData(e) {
           nameLink.innerHTML = parts.join('<span class="blue-text">' + e.value.trim() + '</span>');
 
           // Defina a URL completa como o href da tag <a>.
-          nameLink.href = `http://nas.umuprevtech.com.br/${element.name}`;
+          nameLink.href = `http://localhost:3030/${element.name}`;
 
           nameLink.addEventListener('click', (event) => {
             event.preventDefault();
