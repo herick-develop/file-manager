@@ -22,4 +22,7 @@ O File Manager é uma aplicação de gerenciamento de arquivos através da inter
    ```sh
    git clone https://github.com/herick-develop/file-manager.git
 
+2. Configure seu usuário em control/users.json
+   
+3. Configure suas pastas usuário em control/folders.json
 ## Em Manutenção...
