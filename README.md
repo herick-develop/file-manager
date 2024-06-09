@@ -1,6 +1,6 @@
 # File Manager
 
-![File Manager Logo](logo.png)
+![File Manager Logo](file-manager.png)
 
 O File Manager é uma aplicação de gerenciamento de arquivos através da internet, baseado em fundamentos de ferramentas "nas", o file-manager-web traz um novo conceito de compartilhamento de dados a fim de tornar sua experiência simples e eficaz. Com recursos intuitivos e uma interface de usuário amigável, o File Manager torna a organização e a busca de arquivos uma tarefa fácil.
 
